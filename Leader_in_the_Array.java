@@ -22,9 +22,7 @@ public class Main {
 			rightmax = arr[i];
 			System.out.print(rightmax + " ");
 			}
-		}
-
-               
+		}      
     }
 
 }
