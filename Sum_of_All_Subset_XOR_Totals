@@ -1,1 +1,27 @@
 
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr;//Array Declaration
+        arr = new int[n]; //Array Initialization
+       
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int bits = 0;
+        for (int i=0; i<n; i++){
+            bits |= arr[i];
+        }
+        int result = bits * (int)Math.pow(2, n-1);
+        System.out.print(result);
+        
+
+    }
+
+}
